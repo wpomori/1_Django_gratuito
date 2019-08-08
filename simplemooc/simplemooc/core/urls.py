@@ -1,6 +1,6 @@
 from django.urls import path
 
-from . import views
+from simplemooc.core import views
 
 urlpatterns = [
     path('', views.home, name='home'),
