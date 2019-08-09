@@ -27,13 +27,47 @@ python manage.py runserver
 # Para criar o banco de dados
 python manage.py migrate
 
-# Criando a aplicação
+# Criando primeira aplicação
 python manage.py startapp core
 mv core simplemooc
 
+# Criando segunda aplicação
+python manage.py startapp courses
+mv courses simplemooc
 
+# Instalando biblioteca de gerenciamento de imagem
+pip install Pillow
 
+# Registrando a model da aplicação courses e fazendo as migrações de banco
+python manage.py makemigrations
+python manage.py migrate
 
+# Abrindo o shell do python para Django
+python manage.py shell
+
+	# Importando Course
+	from simplemooc.courses.models import Course
+
+	# Instanciando a classe
+	course = Course()
+
+	# Adicionando informações no banco de dados
+	course.name = "Python na Web com Django"
+
+	course.slug = "django"
+	
+	from datetime import date
+	course.start_date = date.today()
+	course.save()
+	course.id # 1
+	course.pk # 1
+	course.name # 'Python na Web com Django'
+
+	course.name = "Python com Django"
+	course.save()
+	course.created_at
+	course.updated_at
+	course.delete()
 
 
 	# Criar super usuário
