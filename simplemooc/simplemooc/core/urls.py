@@ -1,5 +1,4 @@
 from django.urls import path
-
 from simplemooc.core import views
 
 urlpatterns = [
