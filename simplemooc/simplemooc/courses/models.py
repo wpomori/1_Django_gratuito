@@ -19,7 +19,7 @@ class Course(models.Model):
         'Descrição',
         blank=True
     )
-    star_date = models.DateField(
+    start_date = models.DateField(
         'Data de Início',
         null=True,
         blank=True
@@ -39,3 +39,11 @@ class Course(models.Model):
         auto_now=True
     )
     objects = CourseManager()
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'Curso'
+        verbose_name_plural = 'Cursos'
+        ordering = ['name']

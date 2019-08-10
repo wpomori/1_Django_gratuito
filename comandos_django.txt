@@ -75,17 +75,16 @@ python manage.py shell
 # Criando o banco de dados novamente (removi acima)
 	python manage.py migrate
 
-
-
-
-
-
-
+# Criando superusuário
+	python manage.py createsuperuser
 
 	# Criar super usuário
 		# pine
 		# pine@pine.com
 		# 1234
+
+
+
 
 
 
