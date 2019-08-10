@@ -69,6 +69,18 @@ python manage.py shell
 	course.updated_at
 	course.delete()
 
+# Deletar banco de dados pelo terminal
+	No diretório onde tiver o arquivo db.sqlite3, dê rm db.sqlite3
+
+# Criando o banco de dados novamente (removi acima)
+	python manage.py migrate
+
+
+
+
+
+
+
 
 	# Criar super usuário
 		# pine
