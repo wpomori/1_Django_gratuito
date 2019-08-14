@@ -60,7 +60,7 @@ python manage.py shell
 # Deletar banco de dados pelo terminal
 	No diretório onde tiver o arquivo db.sqlite3, dê rm db.sqlite3
 
-# Criando o banco de dados novamente (removi acima)
+# Criando o banco de dados novamente (após remoção no item anterior)
 	python manage.py migrate
 
 # Criando superusuário
