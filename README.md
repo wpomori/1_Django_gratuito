@@ -1,5 +1,5 @@
 # Criar projeto simplemooc
-django-admin.py startproject simplemooc  
+django-admin.py startproject simplemooc
 cd simplemooc
 
 # Rodar o servidor localmente
@@ -16,7 +16,7 @@ python manage.py runserver
 python manage.py migrate
 
 # Criando primeira aplicação
-python manage.py startapp core
+python manage.py startapp core  
 mv core simplemooc
 
 # Criando segunda aplicação
