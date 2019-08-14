@@ -87,10 +87,6 @@ python manage.py shell
 
 
 
-
-
-
-
 	# O diretório 'core' é uma aplicação
 	# No aquivo settings.py, informe que existem uma nova aplicação. Em 'INSTALLED_APPS' adicione 'simplemooc.core' na última linha
 	# Em urls.py dentro de 'core', adicone esta linha
