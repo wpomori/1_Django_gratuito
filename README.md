@@ -5,12 +5,12 @@ cd simplemooc
 # Rodar o servidor localmente
 python manage.py runserver
 
-	# Para acessar a página da aplicação
-	# Abre página de parabenização, tudo está OK
+	- Para acessar a página da aplicação
+	- Abre página de parabenização, tudo está OK
 	http://127.0.0.1:8000/
 
 # Abra o arquivo settings.py
-# Em 'LANGUAGE_CODE', altere 'en-us' para 'pt-br'
+- Em 'LANGUAGE_CODE', altere 'en-us' para 'pt-br'
 
 # Para criar o banco de dados
 python manage.py migrate
@@ -33,13 +33,13 @@ python manage.py migrate
 # Abrindo o shell do python para Django
 python manage.py shell
 
-	# Importando Course
+	- Importando Course
 	from simplemooc.courses.models import Course
 
-	# Instanciando a classe
+	- Instanciando a classe
 	course = Course()
 
-	# Adicionando informações no banco de dados
+	- Adicionando informações no banco de dados
 	course.name = "Python na Web com Django"
 
 	course.slug = "django"
