@@ -1,5 +1,5 @@
 # Criar projeto simplemooc
-django-admin.py startproject simplemooc
+django-admin.py startproject simplemooc  
 cd simplemooc
 
 # Rodar o servidor localmente
