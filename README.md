@@ -1,5 +1,5 @@
 # Criar projeto simplemooc
-django-admin.py startproject simplemooc
+django-admin.py startproject simplemooc  
 cd simplemooc
 
 # Rodar o servidor localmente
@@ -20,14 +20,14 @@ python manage.py startapp core
 mv core simplemooc
 
 # Criando segunda aplicação
-python manage.py startapp courses
+python manage.py startapp courses  
 mv courses simplemooc
 
 # Instalando biblioteca de gerenciamento de imagem
 pip install Pillow
 
 # Registrando a model da aplicação courses e fazendo as migrações de banco
-python manage.py makemigrations
+python manage.py makemigrations  
 python manage.py migrate
 
 # Abrindo o shell do python para Django
