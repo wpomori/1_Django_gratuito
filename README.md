@@ -67,6 +67,6 @@ python manage.py shell
 	python manage.py createsuperuser
 
 	# Criar super usuário
-		# pine
-		# pine@pine.com
+		# admin
+		# admin@admin.com
 		# 1234
