@@ -23,13 +23,16 @@ def index(request):
 
 def details(request, slug):
     course = get_object_or_404(Course, slug=slug)
+    context = {}
     if request.method == 'POST':
         form = ContactCourse(request.POST)
+        if form.is_valid():
+            context['is_valid'] = True
+            form.send_mail(course)
+            form = ContactCourse()
     else:
         form = ContactCourse()
-    context = {
-        'course': course,
-        'form': form
-    }
+    context['form'] = form
+    context['course'] = course
     template_name = 'courses/details.html'
     return render(request, template_name, context)
