@@ -89,6 +89,7 @@ python manage.py shell
     
     # Senha segundo usuário
         # Rita
+        # rita@rita.com
         # %$#@Der&**9
 
 
