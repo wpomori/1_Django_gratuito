@@ -2,3 +2,5 @@
 .idea/*
 Aulas*
 venv
+simplemooc/simplemooc/__pycache__/*.pyc
+simplemooc/simplemooc/courses/__pycache__/*.pyc
