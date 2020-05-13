@@ -85,12 +85,22 @@ python manage.py shell
 	# Criar super usuário
 		# admin
 		# admin@admin.com
-		# 1234
+		# 45¨**(($$$))
     
     # Senha segundo usuário
         # Rita
         # rita@rita.com
         # %$#@Der&**9
+    
+    # Senha terceiro usuário
+        # Jão
+        # jao@jao.com
+        # 45¨**(($$$))
+
+    # Senha quarto usuário
+        # deb
+        # deb@deb.com
+        # 09((__--=+§))
 
 
 
