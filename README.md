@@ -72,4 +72,4 @@ python manage.py shell
 	# Criar super usuário
 		# admin
 		# admin@admin.com
-		# 1234
+		# 12345678teste
