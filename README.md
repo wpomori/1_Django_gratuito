@@ -9,6 +9,9 @@ python manage.py runserver
 	- Abre página de parabenização, tudo está OK
 	http://127.0.0.1:8000/
 
+# Rodar syncdb no Django versão 3
+python manage.py migrate --run-syncdb
+
 # Abra o arquivo settings.py
 - Em 'LANGUAGE_CODE', altere 'en-us' para 'pt-br'
 
