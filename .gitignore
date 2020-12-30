@@ -2,4 +2,6 @@
 .idea/*
 Aulas*
 venv
-*simplemooc/simplemooc/courses/migrations/__pycache__/*
+*.jpg
+migrations
+db.sqlite3
