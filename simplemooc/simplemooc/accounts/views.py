@@ -39,19 +39,15 @@ def register(request):
 def password_reset(request):
     context = {}
     template_name = 'accounts/password_reset.html'
-    if request.method == 'POST':
-        form = PasswordResetForm(request.POST or None)
-        if form.is_valid():
-            user = User.objects.get(form.cleaned_data['email'])
-            key = generate_hash_key(user.username)
-            reset = PasswordReset(key=key, user=user)
-            reset.save()
-            context['success'] = True
-            context['form'] = form
-        else:
-            form = PasswordResetForm()
-            context['form'] = form
-    return render(request, template_name, context)
+    form = PasswordResetForm(request.POST or None)
+
+    if form.is_valid():
+        user = User.objects.get(email=form.cleaned_data['email'])
+        key = generate_hash_key(user.username)
+        reset = PasswordReset(key=key, user=user)
+        reset.save()
+        context['success'] = True
+    context['form'] = form
 
     return render(request, template_name, context)
 
