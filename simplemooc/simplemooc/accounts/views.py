@@ -6,10 +6,12 @@ from django.conf import settings
 
 from .forms import RegisterForm, EditAccountForm
 
+
 @login_required
 def dashboard(request):
     template_name = 'accounts/dashboard.html'
     return render(request, template_name)
+
 
 def register(request):
     template_name = 'accounts/register.html'
@@ -29,6 +31,7 @@ def register(request):
     }
     return render(request, template_name, context)
 
+
 @login_required
 def edit(request):
     template_name = 'accounts/edit.html'
@@ -43,6 +46,7 @@ def edit(request):
         form = EditAccountForm(instance=request.user)
     context['form'] = form
     return render(request, template_name, context)
+
 
 @login_required
 def edit_password(request):
