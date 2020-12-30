@@ -1,4 +1,4 @@
-# Criar projeto simplemooc
+# Criar projeto simplemooc (Com python 3.6.8)
 django-admin.py startproject simplemooc  
 cd simplemooc
 
